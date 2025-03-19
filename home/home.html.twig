@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <style>
+        /* Styles généraux */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75');
+            background-size: cover;
+            color: #fff;
+        }
+
+        /* En-tête */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, rgba(18, 120, 236, 0.31), rgba(182, 39, 99, 0.51));    
+            padding: 20px; /* Augmente l'espace intérieur */
+            height: 50px;
+        }
+
+        header .logo {
+            width: 50px; /* Ajuste la taille de l'image */
+            height: auto;
+            margin-right: 20px; /* Espace entre l'image et les boutons */
+        }
+
+        header .buttons {
+            display: flex;
+            gap: 50px;
+            height: 50px;
+        }
+
+        header button {
+            background-color: rgba(111, 112, 177, 0.48); /* Gris foncé */
+            border-color: #6c757d; /* Bordure gris foncé */
+            border: none;
+            padding: 10px 15px;
+            color:rgb(255, 255, 255);
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.2rem; /* Agrandit le texte */
+            border-radius: 20px;
+        }
+
+        header button:hover, .logout:hover {
+            background-color:rgba(177, 178, 233, 0.48); /* Rouge */
+        }
+
+        header .logout {
+            background-color: rgba(111, 112, 177, 0.48); /* Gris foncé */
+            border-color: #6c757d; /* Bordure gris foncé */
+            border: none;
+            padding: 10px 15px;
+            color:rgb(255, 255, 255);
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.2rem; /* Agrandit le texte */
+            text-decoration: none;
+            border-radius: 20px;
+        }
+
+        .container {
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            background: rgba(50, 50, 50, 0.2);
+            margin: 200px auto; /* Augmente la marge supérieure pour le placer encore plus bas */
+            width: 1000px; /* Ajuste la largeur au contenu */
+            max-width: 90%; /* Limite la largeur maximale */
+            backdrop-filter: blur(10px); /* Ajoute un effet de flou */
+        }
+
+        .box {
+            width: 1000px;
+            height: 250px;
+            background-color:rgba(255, 255, 255, 0.42);
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 20px; /* Ajoute de l'espace à l'intérieur de la boîte */
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        th {
+            background-color:rgb(192, 192, 192);
+        }
+
+        /* Pied de page */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            padding: 10px;
+            color: #fff;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://img.freepik.com/vecteurs-libre/ordinateur-bureau-vconcept-illustration_114360-12153.jpg?ga=GA1.1.840802286.1729083279&semt=ais_hybrid" alt="Logo" class="logo" style="width: 80px; height: auto; border-radius: 50%;"> <!-- Ajoutez votre image ici -->
+        <div class="buttons">
+            <button a href="#" id="km" class="km">Frais de KM</button>
+            <button a href="#" id="repas" class="repas">Frais de repas</button>
+            <button a href="#" id="house" class="house">Frais d'hébergement</button>
+            <button a href="#" id="etape" class="etape">Frais des étapes</button>
+            <button a href="#" id="other" class="other">Autres frais</button>
+        </div>
+        <a href="#" id="logout" class="logout">Se déconnecter</a>
+
+        <script>
+            document.getElementById('logout').addEventListener('click', function(event) {
+                event.preventDefault(); // Empêche le comportement par défaut du lien
+                // Ajoutez ici le code pour déconnecter l'utilisateur si nécessaire
+                window.location.href = 'login'; // Redirige vers la route de login
+            });
+
+            document.getElementById('km').addEventListener('click', function(event) {
+                event.preventDefault(); // Empêche le comportement par défaut du lien
+                window.location.href = 'km'; // Redirige vers la route de login
+            });
+
+            document.getElementById('repas').addEventListener('click', function(event) {
+                event.preventDefault(); // Empêche le comportement par défaut du lien
+                window.location.href = 'repas'; // Redirige vers la route de login
+            });
+
+            document.getElementById('etape').addEventListener('click', function(event) {
+                event.preventDefault(); // Empêche le comportement par défaut du lien
+                window.location.href = 'etape'; // Redirige vers la route de login
+            });
+
+            document.getElementById('house').addEventListener('click', function(event) {
+                event.preventDefault(); // Empêche le comportement par défaut du lien
+                window.location.href = 'house'; // Redirige vers la route de login
+            });
+
+            document.getElementById('other').addEventListener('click', function(event) {
+                event.preventDefault(); // Empêche le comportement par défaut du lien
+                window.location.href = 'other'; // Redirige vers la route de login
+            });
+        </script>
+    </header>
+
+    <div class="scrolling-text">
+        <p>Ce site vous permet de gérer vos fraits de km, de repas, d'hébergement, des étapes et autres. Si vous avez le moindre problème n'éziter pas à nous contacter.</p>
+    </div>
+
+    <style>
+        .scrolling-text {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+
+        .scrolling-text p {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll-text 40s linear infinite;
+        }
+
+        @keyframes scroll-text {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+
+    <!-- Contenu central -->
+    <div class="container text-white">
+        <div class="d-flex justify-content-between">
+            <h3>Bienvenue sur notre site de gestion de frais ! </h3>
+            <p>Vous pouvez consulter les frais de vos collaborateurs en cliquant sur les boutons ci-dessus.</p>
+            <p>Vous pouvez également vous déconnecter en cliquant sur le bouton "Se déconnecter".</p>
+        </div>
+    </div>
+</body>
+</html>
