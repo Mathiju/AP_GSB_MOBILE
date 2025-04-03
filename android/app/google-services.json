@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "817436331010",
+    "project_id": "ap-gsp",
+    "storage_bucket": "ap-gsp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817436331010:android:6b8308b75431c13abf6b1b",
+        "android_client_info": {
+          "package_name": "com.example.ap_gsb_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdZX6rxd8xba7yDH_Zv2dfFRRWK0OLQIw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817436331010:android:c231c979be633d88bf6b1b",
+        "android_client_info": {
+          "package_name": "com.example.ap_mobile_gsb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdZX6rxd8xba7yDH_Zv2dfFRRWK0OLQIw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
